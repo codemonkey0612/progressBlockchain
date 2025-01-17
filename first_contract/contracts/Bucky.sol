@@ -6,4 +6,7 @@ contract Bucky {
     function setAge(uint x) public {
         age = x;
     }
+    function getAge() public view returns (uint){
+        return age;
+    }
 }
