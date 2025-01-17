@@ -10,6 +10,11 @@ contract VariableScopeExample {
     function getPrivateVar() public view returns (uint) {
         return privateVar;
     }
+    function setPrivateVar(uint _num) public returns (uint) {
+        privateVar = _num;
+        return privateVar;
+
+    }
 }
     contract DerivedContract is VariableScopeExample {
         function getInternalVar() public view returns (uint) {
